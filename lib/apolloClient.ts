@@ -6,7 +6,7 @@ import { serverApolloClient } from "./apollo/serverClient";
 const endpoint = process.env.HYGRAPH_ENDPOINT;
 
 if (!endpoint) {
-  throw new Error("NEXT_PUBLIC_HYGRAPH_ENDPOINT is missing");
+  throw new Error("HYGRAPH_ENDPOINT is missing");
 }
 
 export const apolloClient = new ApolloClient({
